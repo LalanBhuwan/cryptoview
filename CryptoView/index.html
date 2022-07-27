@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CryptoView</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatibel" content="IE=Edge" />
+    <meta name="vieport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <!-- icon ke liye  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css"
+    />
+    <!-- font familiy ke liye -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="flex_container">
+      <!-- Navigation bar -->
+      <div class="flex_container">
+        <img src="./cloudcoin.png" alt="Logo" class="logo">
+        <h1>CryptoView</h1>
+      </div>
+      <a href="search.html" class="anchor_btn">Search</a>
+    </nav>
+    <!-- Main section containing main heading and image-->
+    <section class="main flex_container">
+      <h1>
+        CryptoView
+        <br />
+        <br />
+        The new Level of
+        <br />
+        Digital Currency
+      </h1>
+      <img
+        src="./crypto_portfolio.png"
+        alt=""
+      />
+    </section>
+
+    <!-- Second section containing top 4/5 coin information -->
+    <section class="tranding_coin ">
+      <div class="scroll_animation flex_container">
+        <div class="card">
+          <img
+            src="https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579"
+            alt="coin image"
+            class="float_left"
+          />
+          <div class="float_right ml_1">
+            <h3>Bitcoin</h3>
+            <h4>₹ <span id="bitcoin_price_container"></span></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://assets.coingecko.com/coins/images/279/thumb/ethereum.png?1595348880"
+            alt="coin image"
+            class="float_left"
+          />
+          <div class="float_right ml_1">
+            <h3>Ethereum</h3>
+            <h4>₹ <span id="ethereum_price_container"></span></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://assets.coingecko.com/coins/images/975/thumb/cardano.png?1547034860"
+            alt="coin image"
+            class="float_left"
+          />
+          <div class="float_right ml_1">
+            <h3>Cardano</h3>
+            <h4>₹ <span id="cardano_price_container"></span></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://assets.coingecko.com/coins/images/5/thumb/dogecoin.png?1547792256"
+            alt="coin image"
+            class="float_left"
+          />
+          <div class="float_right ml_1">
+            <h3>Doge</h3>
+            <h4>₹ <span id="doge_price_container"></span></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://assets.coingecko.com/coins/images/4284/thumb/Helium_HNT.png?1612620071"
+            alt="coin image"
+            class="float_left"
+          />
+          <div class="float_right ml_1">
+            <h3>Helium</h3>
+            <h4>₹ <span id="helium_price_container"></span></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://assets.coingecko.com/coins/images/2/thumb/litecoin.png?1547033580"
+            alt="coin image"
+            class="float_left"
+          />
+          <div class="float_right ml_1">
+            <h3>Litecoin</h3>
+            <h4>₹ <span id="litecoin_price_container"></span></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://assets.coingecko.com/coins/images/4128/thumb/solana.png?1640133422"
+            alt="coin image"
+            class="float_left"
+          />
+          <div class="float_right ml_1">
+            <h3>Solana</h3>
+            <h4>₹ <span id="solana_price_container"></span></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://assets.coingecko.com/coins/images/100/thumb/Stellar_symbol_black_RGB.png?1552356157"
+            alt="coin image"
+            class="float_left"
+          />
+          <div class="float_right ml_1">
+            <h3>Stellar</h3>
+            <h4>₹ <span id="stellar_price_container"></span></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://assets.coingecko.com/coins/images/325/thumb/Tether-logo.png?1598003707"
+            alt="coin image"
+            class="float_left"
+          />
+          <div class="float_right ml_1">
+            <h3>Tether</h3>
+            <h4>₹ <span id="tether_price_container"></span></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://assets.coingecko.com/coins/images/9576/thumb/BUSD.png?1568947766"
+            alt="coin image"
+            class="float_left"
+          />
+          <div class="float_right ml_1">
+            <h3>Binance</h3>
+            <h4>₹ <span id="binance_price_container"></span></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://assets.coingecko.com/coins/images/12171/thumb/polkadot.png?1639712644"
+            alt="coin image"
+            class="float_left"
+          />
+          <div class="float_right ml_1">
+            <h3>Polkadot</h3>
+            <h4>₹ <span id="polkadot_price_container"></span></h4>
+          </div>
+        </div>
+
+      </div>
+      
+    </section>
+
+    <!-- Third section containing the main features of the website -->
+    <section class="features flex_container">
+      <div class="card">
+        <h1>Free</h1>
+        <p>
+          This is a completely free to use Website. We do not show any ads or we
+          do not have any paid membership.
+        </p>
+      </div>
+      <div class="card">
+        <h1>Historical Data</h1>
+        <p>
+          We show graphical representation of historical data of the
+          Cryptocurrencies. The graphs can be selected from 24,hours upto 1
+          years.
+        </p>
+      </div>
+      <div class="card">
+        <h1>100+ Coin</h1>
+        <p>
+          We show the data of many popular Cryptocurrencies and even have a
+          search functionality for a smoother user Experience.
+        </p>
+      </div>
+    </section>
+
+    <!-- This is the footer containing copyright, create by etc.  -->
+    <footer class="footer">
+      <i class="fa-brands fa-facebook-f"></i>
+      <!-- two icon ke bich me space liye  -->
+      <!-- &nbsp se 1 space milta hai or &emsp se 4space (means 1tap ) space milta hai-->
+      &emsp;
+      <i class="fa-brands fa-instagram"></i>
+      &emsp;
+      <i class="fa-brands fa-linkedin-in"></i>
+      &emsp;
+      <i class="fa-brands fa-twitter"></i>
+      <h4>Copyright &copy; Bhuwan &amp; Team</h4>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
